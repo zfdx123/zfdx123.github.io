@@ -31,9 +31,9 @@ expires: 2026-08-31 23:59:59
 # public_domain：公有领域，详情请见 CC0 1.0。
 license: all_rights_reserved
 # 可选补充信息
-copyright: 本文是瞎写的，你如果要用的话，后果自负。
+# copyright: 本文是瞎写的，你如果要用的话，后果自负。
 # 置顶
-sticky: 999
+# sticky: 999
 ---
 
 # 文件头内容
@@ -67,8 +67,8 @@ expires: 2026-08-31 23:59:59
 # cc_by：署名，详情请见 CC BY 4.0。
 # public_domain：公有领域，详情请见 CC0 1.0。
 license: all_rights_reserved
-# 可选补充信息
-copyright: 本文是瞎写的，你如果要用的话，后果自负。
+# 可选补充信息 (优先级高于license，会覆盖license)
+copyright: 本文是瞎写的，你如果要用的话，后果自负。 
 # 置顶
 sticky: 999
 ```
