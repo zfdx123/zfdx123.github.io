@@ -2,11 +2,15 @@
 layout: post
 title: Hexo模板相关
 date: 2024-05-06 14:09:19
+# 标签
 tags: 
     - Hexo
     - Redefine
+# 分类
 categories: 
+    # 主类
     - Hexo
+    # 子类
     - Redefine
 # 缩略图
 thumbnail: "https://evan.beee.top/img/208184324-f2640ade-587a-4f46-8ad1-7b4c1b31394f.png"
