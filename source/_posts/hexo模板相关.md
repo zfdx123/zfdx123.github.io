@@ -36,8 +36,47 @@ copyright: 本文是瞎写的，你如果要用的话，后果自负。
 sticky: 999
 ---
 
-# 提示块
+# 文件头内容
 
+```
+# 标签
+tags: 
+    - Hexo
+    - Redefine
+# 分类
+categories: 
+    # 主类
+    - Hexo
+    # 子类
+    - Redefine
+# 缩略图
+thumbnail: "https://evan.beee.top/img/208184324-f2640ade-587a-4f46-8ad1-7b4c1b31394f.png"
+# 文章页头图
+cover: "images/logo.svg"
+#banner: "图片链接"
+# 文章摘要
+excerpt: "这是文章摘要 This is the excerpt of the post"
+# 时效
+expires: 2026-08-31 23:59:59
+# 版权信息
+# all_rights_reserved：保留所有权利。
+# cc_by_nc_sa：署名-非商业性使用-相同方式共享，详情请见 CC BY-NC-SA 4.0。
+# cc_by_nc：署名-非商业性使用，详情请见 CC BY-NC 4.0。
+# cc_by_nd：署名-禁止演绎，详情请见 CC BY-ND 4.0。
+# cc_by_sa：署名-相同方式共享，详情请见 CC BY-SA 4.0。
+# cc_by：署名，详情请见 CC BY 4.0。
+# public_domain：公有领域，详情请见 CC0 1.0。
+license: all_rights_reserved
+# 可选补充信息
+copyright: 本文是瞎写的，你如果要用的话，后果自负。
+# 置顶
+sticky: 999
+```
+
+
+
+
+# 提示块
 
 ## 大号提示块
 
