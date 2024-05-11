@@ -111,10 +111,14 @@ namespace SqlServerTest.DataBase
                             sqlCommand.Parameters.AddWithValue($"@{property.Name}", property.GetValue(item) ?? DBNull.Value);
                         }
 
-                        await sqlCommand.ExecuteNonQueryAsync();
+                        int rowsAffected = await sqlCommand.ExecuteNonQueryAsync();
+                        if (rowsAffected == 0)
+                        {
+                            return false; // 如果没有影响任何行，则操作失败
+                        }
                     }
 
-                    return true; // 操作成功
+                    return true; // 所有行都受影响，则操作成功
                 }
             }
             catch (Exception)
