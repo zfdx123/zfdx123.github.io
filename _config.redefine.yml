@@ -213,6 +213,7 @@ navbar:
       submenus:
         Linux命令速查: /linux-command/
         程序员速查备忘录: /reference/
+        CyberChef: /CyberChef/
     #     Link1: /link1
     #     Link2: /link2
     #     Link3: /link3
