@@ -34,6 +34,7 @@ license: all_rights_reserved
 # copyright: 本文是瞎写的，你如果要用的话，后果自负。
 # 置顶
 # sticky: 999
+mathjax: true # 数学公式
 ---
 
 # 文件头内容
@@ -71,6 +72,8 @@ license: all_rights_reserved
 copyright: 本文是瞎写的，你如果要用的话，后果自负。 
 # 置顶
 sticky: 999
+# 数学公式
+mathjax: true
 ```
 
 
@@ -319,3 +322,51 @@ This is Tab 3.
 其中，页面内不重复的ID 为你为这个选项卡创建的唯一标识符，可以随便取。
 
 每个栏目内容使用 <!-- tab 栏目名称 --> 和 <!-- endtab --> 来定义。
+
+导图 [文档](https://mermaid.js.org/)
+
+```
+`mermaid
+
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+`
+```
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
+公式 [文档](https://github.com/next-theme/hexo-filter-mathjax/)
+
+```
+$$
+i\hbar\frac{\partial}{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
+$$
+
+\begin{eqnarray\*}
+\nabla\cdot\vec{E}&=&\frac{\rho}{\epsilon_0}\\\\
+\nabla\cdot\vec{B}&=&0\\\\
+\nabla\times\vec{E}&=&-\frac{\partial B}{\partial t}\\\\
+\nabla\times\vec{B}&=&\mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t}\right)\\\\
+\end{eqnarray\*}
+
+```
+
+$$
+i\hbar\frac{\partial}{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
+$$
+
+\begin{eqnarray\*}
+\nabla\cdot\vec{E}&=&\frac{\rho}{\epsilon_0}\\\\
+\nabla\cdot\vec{B}&=&0\\\\
+\nabla\times\vec{E}&=&-\frac{\partial B}{\partial t}\\\\
+\nabla\times\vec{B}&=&\mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t}\right)\\\\
+\end{eqnarray\*}
