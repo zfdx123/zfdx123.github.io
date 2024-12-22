@@ -87,7 +87,10 @@ global:
     enable: false
     custom_message: # Custom message. If empty, the site title will be displayed
   # Whether to enable open graph
-  open_graph: true
+  open_graph:
+    enable: true
+    image: /images/logo.svg #your_image_path
+    description: 爱唠叨的小王~ #your_description
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
