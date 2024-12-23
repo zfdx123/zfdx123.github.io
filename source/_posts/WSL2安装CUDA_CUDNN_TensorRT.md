@@ -22,7 +22,7 @@ license: cc_by_nc_sa
 ```bash
 # 根据英伟达CUDA下方提示命令复制执行
 # 配置环境变量(要根据自己的CUDA版本修改)
-sudo vim ~/.bashrc
+vim ~/.bashrc
 # 添加如下内容
 export CUDA_HOME=/usr/local/cuda-12.6
 export PATH=/usr/local/cuda-12.6/bin:$PATH 
@@ -113,11 +113,15 @@ wget https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/10
 # 文件名为下载的文件名
 tar -xzvf TensorRT-10.7.0.23.Linux.x86_64-gnu.cuda-12.6.tar.gz
 # 转移到合适的文件夹
-mv TensorRT-10.7.0.23 /usr/local/TensorRT-10.7.0.23
+sudo mv TensorRT-10.7.0.23 /usr/local/TensorRT-10.7.0.23
+# 配置环境变量
+vim ~/.bashrc
 # 添加 TensorRT 的绝对路径库目录添加到环境变量中 LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/local/TensorRT-10.7.0.23/lib:$LD_LIBRARY_PATH
 # 可选，添加 trtexec 到环境变量
 export PATH=/usr/local/TensorRT-10.7.0.23/bin:$PATH
+# 环境生效
+source ~/.bashrc
 ```
 
 ** 配置项目环境 **
@@ -195,3 +199,5 @@ print(tensorrt.__version__)
 assert tensorrt.Builder(tensorrt.Logger())
 # 如果卡住说明安装存在问题
 ```
+
+![测试](images/wsl_cuda/test.jpg)
