@@ -116,7 +116,7 @@ tar -xzvf TensorRT-10.7.0.23.Linux.x86_64-gnu.cuda-12.6.tar.gz
 mv TensorRT-10.7.0.23 /usr/local/TensorRT-10.7.0.23
 # 添加 TensorRT 的绝对路径库目录添加到环境变量中 LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/local/TensorRT-10.7.0.23/lib:$LD_LIBRARY_PATH
-# 添加 trtexec 到环境变量
+# 可选，添加 trtexec 到环境变量
 export PATH=/usr/local/TensorRT-10.7.0.23/bin:$PATH
 ```
 
