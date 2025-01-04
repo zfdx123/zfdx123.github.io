@@ -35,7 +35,7 @@ nvcc -V
 
 ![配置成功](images/wsl_cuda/nvcc.png)
 
-{% note success  %}
+{% note success %}
 配置完成
 {% endnote %}
 
